@@ -1,5 +1,2 @@
-Hi im Amir gamer
-im in Salam pirooz shcool! 
-and im odi 3 
-i link salam shcool ita not that bad. 
-
+# Hello, I'm Amir Abbas and you can also call me Amir Gamer
+because I'm a gamer and I have a YouTube channel and 65,000 followers. I'm in Salam Pirouz School and I'm in the fourth grade of elementary school. I'm in Ferdowsi class and I'm odi 3. I have 6 or 7 sites that I use for different things. Of course, it's Amir Siya's site. I have a city or town in Minecraft. Now I've also created a site to make things easier for my citizens, for example, for Khurdi or Farsho. This was just one of them.
