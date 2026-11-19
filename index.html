@@ -11,7 +11,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- background:#070710;color:white;
+ background:#070710;color:#fff;
  font-family:Tahoma,Arial,sans-serif;
  line-height:1.9;overflow-x:hidden
 }
@@ -25,44 +25,17 @@ body:before{
 body:after{
  content:"";position:fixed;inset:0;z-index:-1;
  opacity:.12;pointer-events:none;
- background-image:
- linear-gradient(#ffffff10 1px,transparent 1px),
+ background-image:linear-gradient(#ffffff10 1px,transparent 1px),
  linear-gradient(90deg,#ffffff10 1px,transparent 1px);
  background-size:45px 45px
 }
 a{text-decoration:none;color:inherit}
 .container{max-width:1100px;margin:auto;padding:0 22px}
 
-/* تبلیغات امبرسیتی */
-.ad-area{
- max-width:1150px;
- margin:22px auto 0;
- padding:0 18px;
-}
-.ad-banner{
- display:block;
- overflow:hidden;
- border-radius:17px;
- border:1px solid #a855f7;
- box-shadow:0 0 20px #8b35ff66;
- transition:.3s;
-}
-.ad-banner:hover{
- box-shadow:0 0 35px #a855f7;
- transform:translateY(-3px);
-}
-.ad-banner img{
- display:block;
- width:100%;
- height:auto;
-}
-
 /* HERO */
 .hero{
- min-height:590px;
- display:flex;align-items:center;
- justify-content:center;text-align:center;
- padding:80px 20px;
+ min-height:650px;display:flex;align-items:center;
+ justify-content:center;text-align:center;padding:80px 20px;
  position:relative;overflow:hidden
 }
 .hero:before{
@@ -82,9 +55,9 @@ a{text-decoration:none;color:inherit}
 }
 .hero-content{position:relative;z-index:2}
 .logo{
- font-size:clamp(42px,8vw,85px);
- font-weight:1000;letter-spacing:2px;line-height:1.5;
- text-shadow:0 0 10px #a855f7,0 0 35px #a855f7
+ font-size:clamp(42px,8vw,85px);font-weight:1000;
+ letter-spacing:2px;line-height:1.5;
+ text-shadow:0 0 10px #a855f7,0 0 35px #a855f7;
 }
 .logo span{
  background:linear-gradient(90deg,#a855f7,#00d9ff,#ff45d4);
@@ -93,42 +66,33 @@ a{text-decoration:none;color:inherit}
 }
 @keyframes rainbow{to{background-position:200% center}}
 .subtitle{
- color:#b8b4ca;font-size:17px;
- margin:15px auto 30px;max-width:570px
+ color:#b8b4ca;font-size:17px;margin:15px auto 30px;
+ max-width:570px
 }
 .tag{
  display:inline-block;border:1px solid #a855f777;
  background:#a855f719;color:#d6baff;
- padding:6px 18px;border-radius:30px;
- font-size:13px;margin-bottom:15px
+ padding:6px 18px;border-radius:30px;font-size:13px;
+ margin-bottom:15px
 }
-.buttons{
- display:flex;justify-content:center;gap:15px;flex-wrap:wrap
-}
+.buttons{display:flex;justify-content:center;gap:15px;flex-wrap:wrap}
 .btn{
  display:inline-block;padding:12px 25px;border-radius:10px;
  font-weight:bold;transition:.3s;
  background:linear-gradient(100deg,#7c3aed,#bd35ff,#168bff);
  box-shadow:0 0 20px #9333ea66
 }
-.btn:hover{
- transform:translateY(-5px);
- box-shadow:0 0 35px #a855f7
-}
+.btn:hover{transform:translateY(-5px);box-shadow:0 0 35px #a855f7}
 .btn-outline{
  display:inline-block;padding:11px 24px;border-radius:10px;
  border:1px solid #a855f7;color:#d7c2ff;transition:.3s
 }
-.btn-outline:hover{
- background:#a855f722;box-shadow:0 0 20px #a855f766
-}
+.btn-outline:hover{background:#a855f722;box-shadow:0 0 20px #a855f766}
 
 /* SECTIONS */
 section{padding:75px 0}
 .section-title{text-align:center;margin-bottom:38px}
-.section-title h2{
- font-size:29px;text-shadow:0 0 20px #a855f766
-}
+.section-title h2{font-size:29px;text-shadow:0 0 20px #a855f766}
 .section-title p{color:#918ca6;font-size:14px}
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{
@@ -139,8 +103,7 @@ section{padding:75px 0}
 }
 .card:before{
  content:"";position:absolute;top:0;right:0;width:100%;
- height:2px;
- background:linear-gradient(90deg,#a855f7,#00d9ff,#ff45d4)
+ height:2px;background:linear-gradient(90deg,#a855f7,#00d9ff,#ff45d4)
 }
 .card:hover{
  transform:translateY(-8px);
@@ -154,13 +117,11 @@ section{padding:75px 0}
 .card h3{font-size:19px;margin-bottom:9px}
 .card p{font-size:13px;color:#aaa6ba;margin-bottom:16px}
 .small-btn{
- display:inline-block;padding:7px 15px;
- border:1px solid #a855f777;color:#d3b5ff;
- border-radius:8px;font-size:13px;transition:.3s
+ display:inline-block;padding:7px 15px;border:1px solid #a855f777;
+ color:#d3b5ff;border-radius:8px;font-size:13px;
+ transition:.3s
 }
-.small-btn:hover{
- background:#a855f733;box-shadow:0 0 15px #a855f766
-}
+.small-btn:hover{background:#a855f733;box-shadow:0 0 15px #a855f766}
 
 /* ABOUT */
 .about-box{
@@ -174,15 +135,13 @@ section{padding:75px 0}
 /* FOOTER */
 footer{
  text-align:center;padding:30px 15px;
- border-top:1px solid #a855f733;
- color:#89859b;font-size:13px
+ border-top:1px solid #a855f733;color:#89859b;font-size:13px
 }
 footer span{color:#c084fc}
 
+/* MOBILE */
 @media(max-width:700px){
- .ad-area{margin-top:12px;padding:0 10px}
- .ad-banner{border-radius:10px}
- .hero{min-height:520px}
+ .hero{min-height:570px}
  .cards{grid-template-columns:1fr}
  .logo{font-size:42px}
  section{padding:50px 0}
@@ -195,18 +154,7 @@ footer span{color:#c084fc}
 
 <main>
 
-<!-- بنر تبلیغاتی بالای صفحه -->
-<div class="ad-area">
- <a class="ad-banner"
-    href="YOUR_AMBERCITY_LINK"
-    target="_blank" rel="noopener">
-  <img
-   src="images/ambercity.png"
-   alt="تبلیغات و خرید از امبرسیتی">
- </a>
-</div>
-
-<!-- صفحه اصلی -->
+<!-- صفحه اصلی؛ بدون نوار و کادر بالایی -->
 <div class="hero" id="home">
  <div class="hero-content">
   <span class="tag">WELCOME TO MY GAMING WORLD</span>
@@ -303,8 +251,7 @@ footer span{color:#c084fc}
    <h2>🔥 با AMIR GAMER همراه شو</h2>
    <p>برای ارتباط و دریافت اطلاعات بیشتر پیام بده.</p>
    <br>
-   <a class="btn" href="https://wa.me/989303332476"
-      target="_blank" rel="noopener">
+   <a class="btn" href="https://wa.me/989303332476" target="_blank" rel="noopener">
     ارتباط در واتساپ
    </a>
   </div>
