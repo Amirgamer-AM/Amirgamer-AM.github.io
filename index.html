@@ -3,257 +3,218 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AMIR GAMER</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080812">
+<title>AMIR GAMER | RGB Gaming</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700;900&display=swap');
-
-*{box-sizing:border-box}
+*{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
- margin:0;
- background:#080817;
- color:#f7edff;
- font-family:Vazirmatn,Tahoma,sans-serif;
+ background:#080812;color:#fff;font-family:Tahoma,Arial,sans-serif;
+ line-height:1.8;overflow-x:hidden
 }
+body:before,body:after{
+ content:"";position:fixed;width:400px;height:400px;
+ border-radius:50%;filter:blur(120px);opacity:.2;
+ pointer-events:none;z-index:-1
+}
+body:before{background:#8b00ff;top:5%;right:-200px}
+body:after{background:#00bfff;bottom:0;left:-200px}
+a{text-decoration:none;color:inherit}
+header{
+ position:sticky;top:0;z-index:20;
+ background:#090914d9;backdrop-filter:blur(18px);
+ border-bottom:1px solid #9b5cff35;
+ box-shadow:0 5px 25px #7600ff13
+}
+.nav{
+ max-width:1150px;margin:auto;padding:13px 22px;
+ display:flex;align-items:center;justify-content:space-between;gap:15px
+}
+.logo{
+ font-size:23px;font-weight:900;letter-spacing:1px;
+ color:#b47aff;text-shadow:0 0 15px #a855f7
+}
+.logo span{color:#fff}
+nav{display:flex;gap:22px;flex-wrap:wrap}
+nav a{font-size:14px;color:#c9c4d9;transition:.3s}
+nav a:hover{color:#bd80ff;text-shadow:0 0 12px #a855f7}
+.btn{
+ display:inline-block;padding:11px 21px;border-radius:10px;
+ background:linear-gradient(110deg,#7c3aed,#bd35ff,#168bff);
+ background-size:200% 200%;color:white;font-weight:bold;
+ box-shadow:0 0 18px #9b45ff55;transition:.3s;border:0;cursor:pointer
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 0 28px #a855f7}
 .hero{
- height:300px;
- background:#16052c url('images/hero.png') center/cover no-repeat;
- border-bottom:3px solid #8b18ff;
+ min-height:560px;display:flex;align-items:center;
+ background:linear-gradient(90deg,#080812 4%,#080812c9 52%,#08081250),
+ url('https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1800') center/cover;
+ padding:75px 22px;position:relative
 }
-nav{
- display:flex;
- justify-content:space-evenly;
- flex-wrap:wrap;
- gap:10px;
- padding:17px;
- background:#0b0b1c;
- border:2px solid #53108c;
- border-radius:0 0 25px 25px;
+.hero-content{max-width:1100px;width:100%;margin:auto}
+.tag{
+ display:inline-block;color:#c9a6ff;
+ border:1px solid #a855f777;padding:5px 13px;
+ border-radius:30px;font-size:13px;margin-bottom:18px;
+ background:#8b5cf61a
 }
-nav a{
- color:#e8d5ff;
- text-decoration:none;
- font-weight:bold;
- padding:8px;
+h1{font-size:clamp(36px,6vw,68px);line-height:1.4;margin-bottom:16px}
+h1 span{
+ background:linear-gradient(90deg,#b65cff,#40c8ff,#f15bff);
+ background-size:200%;background-clip:text;color:transparent;
+ animation:gradient 4s linear infinite
 }
-nav a:hover{color:#c044ff;text-shadow:0 0 12px #a000ff}
-main{max-width:1450px;margin:auto;padding:25px 4%}
-.welcome{
- height:150px;
- background:url('images/welcome.png') center/cover no-repeat;
- border:2px solid #8b18ff;
- border-radius:20px;
- margin-bottom:40px;
- box-shadow:0 0 20px #7900ff66;
+@keyframes gradient{to{background-position:200% center}}
+.hero p{color:#d0cde0;max-width:550px;margin-bottom:27px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn-outline{
+ display:inline-block;padding:10px 20px;border:1px solid #9d6cff;
+ border-radius:10px;color:#d6c6ff;transition:.3s
 }
-h2{
- text-align:center;
- width:max-content;
- max-width:100%;
- margin:30px auto;
- padding:10px 30px;
- border:1px solid #a000ff;
- border-radius:30px;
- background:linear-gradient(90deg,#6b00d8,#3d0b83);
- box-shadow:0 0 18px #7900ff66;
-}
-.cards{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:22px;
-}
+.btn-outline:hover{background:#9d6cff22;box-shadow:0 0 18px #a855f755}
+section{max-width:1150px;margin:auto;padding:70px 22px}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:29px;text-shadow:0 0 18px #a855f755}
+.section-title p{color:#9995ac;font-size:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .card{
- display:block;
- text-align:center;
- padding:12px;
- color:white;
- text-decoration:none;
- background:#121226;
- border:2px solid #401078;
- border-radius:20px;
- transition:.2s;
+ background:linear-gradient(145deg,#171527,#10101d);
+ border:1px solid #a855f72c;border-radius:17px;overflow:hidden;
+ transition:.3s;position:relative
 }
 .card:hover{
- transform:translateY(-6px);
- border-color:#b52cff;
- box-shadow:0 0 25px #8900ff88;
+ transform:translateY(-8px);border-color:#a855f7;
+ box-shadow:0 0 25px #8b5cf644,0 10px 35px #0008
 }
-.card img{
- width:100%;
- height:180px;
- object-fit:cover;
- border-radius:12px;
+.card img{width:100%;height:205px;object-fit:cover;display:block;transition:.4s}
+.card:hover img{transform:scale(1.04)}
+.card-content{padding:19px}
+.card h3{font-size:19px;margin-bottom:7px}
+.card p{color:#aaa6ba;font-size:13px;margin-bottom:15px}
+.small-btn{
+ display:inline-block;color:#c4a5ff;font-size:13px;
+ border:1px solid #9b5cff66;padding:7px 14px;border-radius:9px;
+ transition:.3s
 }
-.card h3{color:#ecd8ff}
-.card p{color:#b9a4d6}
-.about{
- text-align:center;
- padding:25px;
- border:2px solid #401078;
- border-radius:20px;
- background:#101024;
+.small-btn:hover{background:#8b5cf633;box-shadow:0 0 15px #8b5cf655}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.about img{
+ width:100%;height:310px;object-fit:cover;border-radius:18px;
+ border:1px solid #9b5cff66;box-shadow:0 0 25px #8b5cf633
 }
+.about p{color:#aaa6ba;margin:15px 0 20px}
+.news-card img{height:170px}
+.support{
+ text-align:center;background:linear-gradient(120deg,#21113f,#111126);
+ border:1px solid #a855f766;border-radius:20px;padding:42px 20px;
+ box-shadow:0 0 30px #8b5cf622
+}
+.support p{color:#c2bad4;margin:10px 0 22px}
 footer{
- text-align:center;
- padding:25px;
- color:#927bb2;
-}
-.ad{
- position:fixed;
- right:18px;
- bottom:18px;
- width:165px;
- padding:7px;
- background:#10091f;
- border:2px solid #a000ff;
- border-radius:13px;
- box-shadow:0 0 17px #a000ff99;
- text-align:center;
- z-index:50;
-}
-.ad img{
- width:100%;
- height:88px;
- object-fit:cover;
- border-radius:8px;
-}
-.ad button{
- position:absolute;
- right:3px;
- top:3px;
- border:0;
- border-radius:50%;
- width:23px;
- height:23px;
- background:white;
- color:#111;
- cursor:pointer;
-}
-.cta{
- display:block;
- margin-top:6px;
- padding:6px;
- border-radius:8px;
- background:linear-gradient(90deg,#6e00db,#b000ff);
- color:white;
- text-decoration:none;
- font-size:12px;
- font-weight:bold;
+ text-align:center;padding:28px 15px;color:#89859b;
+ border-top:1px solid #a855f733;font-size:13px
 }
 @media(max-width:760px){
- .cards{grid-template-columns:1fr 1fr}
- .card img{height:130px}
- .ad{width:135px;right:9px;bottom:9px}
- .hero{height:220px}
-}
-@media(max-width:480px){
+ .nav{flex-direction:column}
+ nav{justify-content:center;gap:13px}
+ .hero{min-height:470px;background-position:58% center}
  .cards{grid-template-columns:1fr}
- .card img{height:170px}
- .ad{width:115px}
- .ad img{height:65px}
- nav a{font-size:13px}
+ .about{grid-template-columns:1fr}
+ .about img{height:230px}
+ section{padding:48px 18px}
 }
 </style>
 </head>
-
 <body>
+<header>
+ <div class="nav">
+  <a class="logo" href="#">AMIR <span>GAMER</span></a>
+  <nav>
+   <a href="#home">خانه</a>
+   <a href="#games">بازی‌ها</a>
+   <a href="#shop">فروشگاه</a>
+   <a href="#news">اخبار</a>
+   <a href="#about">درباره ما</a>
+  </nav>
+  <a class="btn" href="#support">ارتباط با ما</a>
+ </div>
+</header>
 
-<header class="hero"></header>
-
-<nav>
- <a href="#home">⌂ خانه</a>
- <a href="#games">🎮 بازی‌ها</a>
- <a href="#learn">⬡ آموزش‌ها</a>
- <a href="#about">★ درباره ما</a>
- <a href="https://amirgamer-am.github.io/Amir-City/" target="_blank">👑 امیرسیتی</a>
-</nav>
-
-<main id="home">
-
-<div class="welcome"></div>
+<main>
+<div class="hero" id="home">
+ <div class="hero-content">
+  <span class="tag">WELCOME TO AMIR GAMER</span>
+  <h1>دنیای بازی،<br><span>از اینجا شروع می‌شه!</span></h1>
+  <p>آماده‌ای وارد دنیای هیجان بشی؟ بازی کن، رقابت کن و از دنیای گیمینگ لذت ببر!</p>
+  <div class="buttons">
+   <a class="btn" href="#games">مشاهده بازی‌ها</a>
+   <a class="btn-outline" href="#shop">فروشگاه</a>
+  </div>
+ </div>
+</div>
 
 <section id="games">
-<h2>بازی‌های محبوب ماینکرفت</h2>
+ <div class="section-title"><h2>🎮 بازی‌های محبوب</h2><p>دنیای مورد علاقه گیمرها</p></div>
+ <div class="cards">
 
-<div class="cards">
-
-<a class="card" href="#learn">
- <img src="images/minecraft-world.png" alt="دنیای ماینکرفت">
- <h3>ماینکرفت</h3>
- <p>ماجراجویی در دنیای مکعبی</p>
-</a>
-
-<a class="card" href="#learn">
- <img src="images/minecraft-items.png" alt="ابزار ماینکرفت">
- <h3>ابزار و آیتم‌ها</h3>
- <p>وسایل و تجهیزات بازی</p>
-</a>
-
-<a class="card" href="#learn">
- <img src="images/minecraft-blocks.png" alt="بلوک‌های ماینکرفت">
- <h3>بلوک‌های ماینکرفت</h3>
- <p>ساخت‌وساز و کشف دنیا</p>
-</a>
-
-</div>
+  <article class="card">
+   <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="Gaming">
+   <div class="card-content"><h3>GTA V</h3><p>تجربه دنیای آزاد و ماجراجویی‌های جذاب.</p><a class="small-btn" href="#shop">مشاهده بیشتر</a></div>
+  </article>
+  <article class="card">
+   <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800" alt="Gaming competition">
+   <div class="card-content"><h3>Gaming</h3><p>رقابت، مهارت و سرگرمی با دوستان.</p><a class="small-btn" href="#shop">مشاهده بیشتر</a></div>
+  </article>
+ </div>
 </section>
 
-<section id="learn">
-<h2>آموزش‌ها</h2>
-<div class="cards">
-
-<div class="card">
- <img src="images/minecraft-world.png" alt="آموزش ماینکرفت">
- <h3>شروع ماینکرفت</h3>
- <p>راهنمای شروع ماجراجویی</p>
-</div>
-
-<div class="card">
- <img src="images/minecraft-items.png" alt="آموزش ابزارها">
- <h3>آموزش ابزارها</h3>
- <p>آشنایی با آیتم‌های بازی</p>
-</div>
-
-<div class="card">
- <img src="images/minecraft-blocks.png" alt="آموزش بلوک‌ها">
- <h3>ساخت‌وساز</h3>
- <p>ایده‌هایی برای ساختن</p>
-</div>
-
-</div>
+<section id="shop">
+ <div class="section-title"><h2>🛒 فروشگاه گیمینگ</h2><p>محصولات و خدمات دنیای بازی</p></div>
+ <div class="cards">
+  <article class="card">
+   <img src="https://images.unsplash.com/photo-1627856013091-fed6e4e30025?w=800" alt="بازی">
+   <div class="card-content"><h3>محصولات Minecraft</h3><p>محصولات و امکانات مربوط به ماینکرفت.</p><a class="small-btn" href="#support">اطلاعات و سفارش</a></div>
+  </article>
+  <article class="card">
+   <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800" alt="تجهیزات گیمینگ">
+   <div class="card-content"><h3>تجهیزات گیمینگ</h3><p>تجهیزات و لوازم مناسب بازی.</p><a class="small-btn" href="#support">اطلاعات و سفارش</a></div>
+  </article>
+  <article class="card">
+   <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=800" alt="فضای بازی">
+   <div class="card-content"><h3>خدمات بازی</h3><p>برای اطلاع از خدمات با ما ارتباط بگیر.</p><a class="small-btn" href="#support">اطلاعات و سفارش</a></div>
+  </article>
+ </div>
 </section>
 
 <section id="about">
-<h2>درباره AMIR GAMER</h2>
-<div class="about">
-به امپراتوری گیم خوش اومدی! 💜
-<br>
-اینجا قراره دنیای ماینکرفت رو با هم کشف کنیم.
-</div>
+ <div class="about">
+  <div><span class="tag">ABOUT US</span><h2>ما عاشق دنیای گیم هستیم!</h2>
+   <p>AMIR GAMER جایی برای علاقه‌مندان به بازی‌های کامپیوتری است. هدف ما ساختن فضایی جذاب برای گیمرها و معرفی دنیای بازی‌هاست.</p>
+   <a class="btn" href="#support">ارتباط با ما</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=1000" alt="ستاپ گیمینگ">
+ </div>
 </section>
 
+<section id="news">
+ <div class="section-title"><h2>📰 آخرین مطالب</h2><p>مطالب دنیای بازی</p></div>
+ <div class="cards">
+  <article class="card news-card"><img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800" alt="گیمینگ"><div class="card-content"><h3>دنیای گیمینگ</h3><p>با بازی‌ها و تجربه‌های تازه همراه باش.</p></div></article>
+  <article class="card news-card"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800" alt="بازی"><div class="card-content"><h3>تجربه بازی‌های جدید</h3><p>بازی‌های جدید را کشف کن.</p></div></article>
+  <article class="card news-card"><img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?w=800" alt="تجهیزات"><div class="card-content"><h3>تجهیزات گیمینگ</h3><p>تجربه بازی بهتر با تجهیزات مناسب.</p></div></article>
+ </div>
+</section>
+
+<section id="support">
+ <div class="support">
+  <h2>💜 با AMIR GAMER همراه شو</h2>
+  <p>برای ارتباط و دریافت اطلاعات بیشتر پیام بده.</p>
+  <a class="btn" href="https://wa.me/989303332476" target="_blank" rel="noopener">ارتباط در واتساپ</a>
+ </div>
+</section>
 </main>
 
-<footer>
-© AMIR GAMER — ساخته‌شده برای گیمرها 💜
-</footer>
-
-<aside class="ad" id="amir-ad">
-<button onclick="document.getElementById('amir-ad').remove()">×</button>
-
-<a href="https://amirgamer-am.github.io/Amir-City/"
-target="_blank" rel="noopener noreferrer">
-<img src="images/minecraft-blocks.png" alt="امیرسیتی">
-</a>
-
-<a class="cta"
-href="https://amirgamer-am.github.io/Amir-City/"
-target="_blank" rel="noopener noreferrer">
-ورود به امیرسیتی
-</a>
-</aside>
-
+<footer>© 2026 AMIR GAMER - تمامی حقوق محفوظ است.</footer>
 </body>
 </html>
